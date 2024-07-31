@@ -8,10 +8,16 @@ This project is a Selenium-based test automation framework using Java, TestNG, a
 
 - `src/main/java/pages/`
   - Contains page object classes (e.g., `LoginPage.java`).
+- `src/main/java/utils/`
+   - Contains utils files.
+- `src/main/java/resources`
+   - Contains resources required for automation project (e.g., `drivers`).
 - `src/main/java/tests/`
   - Contains test classes (e.g., `FileListTest.java`).
 - `testng.xml`
   - TestNG configuration file for parallel execution.
+- `pom.xml`
+  - Dependencies present in pom.xml file, which we need to .  
 - `path/to/chromedriver`
   - WebDriver executable (e.g., ChromeDriver).
 
@@ -74,6 +80,19 @@ thread-count="2": Specifies the number of parallel threads.
 ### Page Object Model (POM)
 The framework uses the Page Object Model (POM) design pattern to enhance test maintainability and readability. The pages/ directory contains page object classes, and each page object class is responsible for interacting with a specific page.
 
+### Easy steps to run the project locally - 
+1. Clone the repository
+2. Open the project in IDE as the existing Maven project
+3. Right-click on the project and Run As > Maven clean, then Run As > Maven install - to install all dependencies
+4. Chromedriver version 127 is on the path - 
+5. The testng.xml file is kept in the root directory
+6. Pom.XML file contains all required dependencies 
+
 ### Troubleshooting
 **WebDriver Issues:** Ensure that the path to the WebDriver executable is correct and that the correct version of the WebDriver is used for your browser.
 **Dependencies:** Ensure that all dependencies are correctly added to your project by running mvn install.
+
+
+
+
+
